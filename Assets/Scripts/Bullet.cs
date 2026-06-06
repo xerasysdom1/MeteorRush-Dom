@@ -3,10 +3,11 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     float speed = 7f;
+    GameManager gm;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        gm = FindAnyObjectByType<GameManager>();
     }
 
     // Update is called once per frame
@@ -23,7 +24,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            Destroy(other.gameObject);
+            gm.AddScore(1f);
             Destroy(gameObject);
         }
     }
