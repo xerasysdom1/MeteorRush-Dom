@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public TMPro.TextMeshProUGUI scoreText;
@@ -40,9 +40,24 @@ public class GameManager : MonoBehaviour
         {
             // Here you could add code to restart the game or return to the main menu
             Time.timeScale = 0f; // Pause the game
-            scoreText.text = "Game Over! Final Score: " + score.ToString("0") + "\nPress D to Restart";
+            scoreText.text = "Game Over! Final Score: " + score.ToString("0") + "\nPress R to Restart";
             
         }
+    }
+
+    public float getCurrentLives()
+    {
+        return currentLives;
+    }
+
+
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(
+            SceneManager.GetActiveScene().buildIndex
+        );
     }
 }
 
