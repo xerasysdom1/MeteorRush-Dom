@@ -1,3 +1,6 @@
+to control how many lives the player has please change the max lives public by selecting the player and changing on the right side of the screen max lives
+
+
 # Meteor Rush — Skeleton Project
 
 Skeleton project for the Module 3 arcade shooter game built in Unity. In this module, you will create a complete 2D shooter with player movement, shooting, enemies, meteors, health, score, and game over logic.
