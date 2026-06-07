@@ -1,4 +1,4 @@
-to control how many lives the player has please change the max lives public by selecting the player and changing on the right side of the screen max lives
+to control how many lives the player has please change the max lives public by selecting the game manager object and changing on the right side of the screen max lives
 
 
 # Meteor Rush — Skeleton Project
