@@ -1,5 +1,5 @@
 to control how many lives the player has please change the max lives public by selecting the game manager object and changing on the right side of the screen max lives
-
+please play on the 1080 by 1940 screen size that was shown in the class
 
 # Meteor Rush — Skeleton Project
 
