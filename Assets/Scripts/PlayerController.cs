@@ -29,14 +29,7 @@ public class PlayerController : MonoBehaviour
             nextFire = Time.time + fireRate;
         }
     }
-    public void OnRestart(InputValue value)
-    {
-        if (value.isPressed && gm.getCurrentLives() <= 0)
-        {
-            Destroy(gameObject);
-            gm.RestartGame();
-        }
-    }
+
     void Start()
     {
         gm = FindAnyObjectByType<GameManager>();

@@ -7,6 +7,7 @@ public class Enemy : MonoBehaviour
     //  the MonoBehaviour is created
     public GameObject enemyBulletPrefab;
     public Transform emenyFirePoint;
+    
     float fireRate = 1.5f;
     float nextFire = 0f;
     public float moveSpeed;

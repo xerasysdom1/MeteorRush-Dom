@@ -29,7 +29,7 @@ public class MeteorScript : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             gm.TakeDamage(maxLives);
-            Destroy(gameObject);
+            // Destroy(gameObject);
         }
     }
 }

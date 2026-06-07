@@ -4,6 +4,8 @@ public class Bullet : MonoBehaviour
 {
     float speed = 7f;
     GameManager gm;
+    // public AudioSource audioSource2;
+    public AudioClip explosionClip2;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -24,6 +26,7 @@ public class Bullet : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
+            AudioSource.PlayClipAtPoint(explosionClip2, transform.position);
             gm.AddScore(1f);
             Destroy(other.gameObject);
             Destroy(gameObject);
